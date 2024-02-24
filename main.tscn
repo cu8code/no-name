@@ -1,0 +1,140 @@
+[gd_scene load_steps=16 format=3 uid="uid://2n1hxty03wur"]
+
+[ext_resource type="Texture2D" uid="uid://c56lun2m30nq2" path="res://top g.jpeg" id="1_3o73m"]
+[ext_resource type="Texture2D" uid="uid://jluue85mumil" path="res://obama.jpeg" id="1_545el"]
+[ext_resource type="Texture2D" uid="uid://c18avv83uua8u" path="res://sam altmen.jpeg" id="2_18jav"]
+[ext_resource type="Texture2D" uid="uid://vrtyyk8jpskr" path="res://bottom g.jpg" id="2_q82rk"]
+[ext_resource type="Texture2D" uid="uid://dolx11rjiv7e7" path="res://trump.jpeg" id="3_ippng"]
+[ext_resource type="Texture2D" uid="uid://rqykl0thiucp" path="res://mr_beast.jpeg" id="4_miqih"]
+[ext_resource type="Texture2D" uid="uid://bks85ks4isjn1" path="res://police.jpeg" id="5_a344k"]
+[ext_resource type="Texture2D" uid="uid://8t830ve0ft80" path="res://white-house.jpg" id="6_ji757"]
+[ext_resource type="Texture2D" uid="uid://ceyvip6wceyah" path="res://park.jpeg" id="7_dwaj3"]
+[ext_resource type="Texture2D" uid="uid://bbqunhu0k0nrm" path="res://bar.jpeg" id="8_m568j"]
+[ext_resource type="Texture2D" uid="uid://breuog80jdsux" path="res://jail.jpeg" id="9_1kelx"]
+[ext_resource type="Texture2D" uid="uid://bln2g3w1vf6ek" path="res://studio.jpeg" id="10_s6i6j"]
+[ext_resource type="Texture2D" uid="uid://cr83mqttwuxvh" path="res://dico.jpg" id="11_nk7l6"]
+[ext_resource type="Texture2D" uid="uid://dx6x4uepyotxs" path="res://airport.jpeg" id="12_hig80"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ajpss"]
+size = Vector2(127, 117)
+
+[node name="Main" type="Node2D"]
+metadata/_edit_vertical_guides_ = [-936.0]
+
+[node name="bottom g" type="Area2D" parent="."]
+z_index = 999
+position = Vector2(239, 314)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="bottom g"]
+position = Vector2(53.5, -48.5)
+shape = SubResource("RectangleShape2D_ajpss")
+
+[node name="Sprite2D" type="Sprite2D" parent="bottom g/CollisionShape2D"]
+position = Vector2(-0.500029, -1.5)
+scale = Vector2(0.278481, 0.374582)
+texture = ExtResource("1_3o73m")
+
+[node name="top g" type="Area2D" parent="."]
+z_index = 999
+position = Vector2(548, 395)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="top g"]
+position = Vector2(53.5, -48.5)
+shape = SubResource("RectangleShape2D_ajpss")
+
+[node name="Sprite2D" type="Sprite2D" parent="top g/CollisionShape2D"]
+position = Vector2(-0.500029, 0.500011)
+scale = Vector2(0.278481, 0.15978)
+texture = ExtResource("2_q82rk")
+
+[node name="obama" type="Area2D" parent="."]
+z_index = 999
+position = Vector2(972, 60)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="obama"]
+position = Vector2(53.5, -48.5)
+shape = SubResource("RectangleShape2D_ajpss")
+
+[node name="Sprite2D" type="Sprite2D" parent="obama/CollisionShape2D"]
+position = Vector2(-0.500029, 0.500011)
+scale = Vector2(0.278481, 0.15978)
+texture = ExtResource("1_545el")
+
+[node name="sam" type="Area2D" parent="."]
+z_index = 999
+position = Vector2(971, 374)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="sam"]
+shape = SubResource("RectangleShape2D_ajpss")
+
+[node name="Sprite2D" type="Sprite2D" parent="sam/CollisionShape2D"]
+position = Vector2(-5.72205e-06, 0.499998)
+scale = Vector2(0.261603, 0.363924)
+texture = ExtResource("2_18jav")
+
+[node name="trump" type="Area2D" parent="."]
+z_index = 999
+position = Vector2(-171, -87)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="trump"]
+shape = SubResource("RectangleShape2D_ajpss")
+
+[node name="Sprite2D" type="Sprite2D" parent="trump/CollisionShape2D"]
+position = Vector2(0.500004, -0.499998)
+scale = Vector2(0.263713, 0.164993)
+texture = ExtResource("3_ippng")
+
+[node name="mr beast" type="Area2D" parent="."]
+z_index = 999
+position = Vector2(136, 478)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="mr beast"]
+shape = SubResource("RectangleShape2D_ajpss")
+
+[node name="Sprite2D" type="Sprite2D" parent="mr beast/CollisionShape2D"]
+position = Vector2(2.00001, -0.499998)
+scale = Vector2(0.0474074, 0.0348485)
+texture = ExtResource("4_miqih")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(575, 325)
+
+[node name="Police" type="Sprite2D" parent="."]
+position = Vector2(1123, -96)
+scale = Vector2(0.570333, 0.61746)
+texture = ExtResource("5_a344k")
+
+[node name="White-house" type="Sprite2D" parent="."]
+position = Vector2(-152, -84)
+scale = Vector2(0.0589079, 0.0625)
+texture = ExtResource("6_ji757")
+
+[node name="Park" type="Sprite2D" parent="."]
+position = Vector2(1194, 758)
+scale = Vector2(0.571429, 0.571429)
+texture = ExtResource("7_dwaj3")
+
+[node name="Bar" type="Sprite2D" parent="."]
+position = Vector2(-146, 742)
+scale = Vector2(0.59322, 0.59322)
+texture = ExtResource("8_m568j")
+
+[node name="Jail" type="Sprite2D" parent="."]
+position = Vector2(476, -87)
+scale = Vector2(0.498141, 0.445775)
+texture = ExtResource("9_1kelx")
+
+[node name="Studio" type="Sprite2D" parent="."]
+position = Vector2(576, 750)
+scale = Vector2(0.604762, 0.604762)
+texture = ExtResource("10_s6i6j")
+
+[node name="Dico" type="Sprite2D" parent="."]
+position = Vector2(-149, 309)
+scale = Vector2(0.401031, 0.401031)
+texture = ExtResource("11_nk7l6")
+
+[node name="Airport" type="Sprite2D" parent="."]
+position = Vector2(1319, 290)
+scale = Vector2(0.0806885, 0.102864)
+texture = ExtResource("12_hig80")
